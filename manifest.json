@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hide For you on X",
+  "version": "1.1.0",
+  "description": "Hides the For you tab and opens the Following timeline on X.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
